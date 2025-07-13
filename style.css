@@ -1,4 +1,4 @@
- /* Reset & Base Styles */
+/* Reset & Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,7 +20,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #2a5d84;
+  background-color: #0066b4;
   color: white;
   padding: 20px;
   position: fixed;
@@ -48,4 +48,108 @@ body {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
+}
+
+.animal-list a:hover {
+  color: #a0d1ff;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://via.placeholder.com/1600x500');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 100px 300px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+/* Content Sections */
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.info-section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 20px;
+}
+
+.info-section h2 {
+  margin-bottom: 15px;
+  color: #0066b4;
+  font-size: 45px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4d4d4d;
+  color: white;
+  margin-top: 40px;
+  border-radius: 7px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    height: auto;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
 }
