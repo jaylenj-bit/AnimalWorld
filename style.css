@@ -75,6 +75,7 @@ body {
   padding: 100px 300px;
   border-radius: 10px;
   display: inline-block;
+  text-opacity: 1;
 }
 
 .hero h1 {
