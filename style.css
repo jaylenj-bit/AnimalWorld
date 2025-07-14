@@ -33,10 +33,12 @@ body {
   margin-bottom: 40px;
   font-size: 40px;
   text-decoration: underline;
+  font-weight: bold;
 }
 
 .animal-list {
   list-style: none;
+  font-style: italic;
 }
 
 .animal-list li {
@@ -45,7 +47,7 @@ body {
 
 .animal-list a {
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: 500;
   transition: color 0.2s;
 }
